@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutrals -->
+    <!-- Application Structure Plan: A simple, task-oriented page with a central card layout that presents a clear, step-by-step workflow. This structure is designed for authenticated users to guide them through the initial connection process without distractions. -->
+    <!-- Visualization & Content Choices: Report Info: Connection Process -> Goal: Instruct/Guide -> Presentation: A central, card-based flow with text and an interactive button -> Interaction: Button click to trigger the simulated connection process and update the UI state. -> Justification: A linear, guided experience reduces user confusion and improves the success rate of the connection. -> Library/Method: Vanilla JS, Tailwind CSS. CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 flex items-center justify-center min-h-screen">
+
+    <div class="w-full max-w-xl p-8 bg-white rounded-xl shadow-md border border-stone-200">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-stone-900">Welcome!</h1>
+            <p class="mt-2 text-lg text-stone-600">Your dashboard is ready. Let's get your data connected.</p>
+        </header>
+        
+        <div id="statusMessage" class="text-center text-sm text-orange-700 bg-orange-50 p-3 rounded-lg border border-orange-200 hidden">Connecting... Please wait.</div>
+
+        <ol class="space-y-6">
+            <li id="step1" class="flex items-start">
+                <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full bg-orange-700 text-white font-bold">1</div>
+                <div class="ml-4 flex-1">
+                    <h3 class="font-semibold text-lg text-stone-900">Connect to QuickBooks Online</h3>
+                    <p class="mt-1 text-stone-600">Authenticate your Intuit account to grant us temporary access to your data.</p>
+                </div>
+            </li>
+            <li id="step2" class="flex items-start opacity-50">
+                <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full bg-stone-300 text-stone-700 font-bold">2</div>
+                <div class="ml-4 flex-1">
+                    <h3 class="font-semibold text-lg text-stone-900">Choose Your Datasets</h3>
+                    <p class="mt-1 text-stone-600">Select the financial reports, accounts, and metrics you want to analyze.</p>
+                </div>
+            </li>
+            <li id="step3" class="flex items-start opacity-50">
+                <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full bg-stone-300 text-stone-700 font-bold">3</div>
+                <div class="ml-4 flex-1">
+                    <h3 class="font-semibold text-lg text-stone-900">Generate Your Power BI Dashboard</h3>
+                    <p class="mt-1 text-stone-600">Receive a ready-to-use Power BI dashboard file to download and open.</p>
+                </div>
+            </li>
+        </ol>
+
+        <div class="text-center mt-10">
+            <button id="connectButton" class="w-full px-8 py-4 bg-orange-700 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-orange-800 transition-colors duration-300">Start Connection</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const connectButton = document.getElementById('connectButton');
+            const statusMessage = document.getElementById('statusMessage');
+            const step1 = document.getElementById('step1');
+            const step2 = document.getElementById('step2');
+            const step3 = document.getElementById('step3');
+
+            const steps = [
+                { element: step1, buttonText: 'Connecting...' },
+                { element: step2, buttonText: 'Fetching Data...' },
+                { element: step3, buttonText: 'Generating Dashboard...' }
+            ];
+            
+            connectButton.addEventListener('click', () => {
+                connectButton.disabled = true;
+                connectButton.classList.add('opacity-50');
+                statusMessage.classList.remove('hidden');
+
+                setTimeout(() => {
+                    steps[0].element.classList.remove('opacity-50');
+                    steps[0].element.querySelector('div').classList.remove('bg-stone-300', 'text-stone-700');
+                    steps[0].element.querySelector('div').classList.add('bg-orange-700', 'text-white');
+                    connectButton.textContent = 'Fetching Data...';
+                }, 1000);
+
+                setTimeout(() => {
+                    steps[1].element.classList.remove('opacity-50');
+                    steps[1].element.querySelector('div').classList.remove('bg-stone-300', 'text-stone-700');
+                    steps[1].element.querySelector('div').classList.add('bg-orange-700', 'text-white');
+                    connectButton.textContent = 'Generating Dashboard...';
+                }, 2000);
+
+                setTimeout(() => {
+                    steps[2].element.classList.remove('opacity-50');
+                    steps[2].element.querySelector('div').classList.remove('bg-stone-300', 'text-stone-700');
+                    steps[2].element.querySelector('div').classList.add('bg-orange-700', 'text-white');
+                    connectButton.textContent = 'Download Dashboard';
+                    connectButton.disabled = false;
+                    connectButton.classList.remove('opacity-50');
+                    statusMessage.classList.add('hidden');
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Disconnected</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutrals -->
+    <!-- Application Structure Plan: A static, centered layout with a clear message and direct call-to-action buttons. This simple structure is chosen to provide immediate confirmation and to minimize user confusion after an important action like disconnecting their account. -->
+    <!-- Visualization & Content Choices: Report Info: Disconnect Confirmation -> Goal: Inform/Provide Options -> Presentation: A central card with a success message and simple HTML buttons -> Interaction: Clicks to navigate back to the launch page or the main domain. -> Justification: A minimal, focused design is best for conveying a single, important status update. -> Library/Method: Vanilla JS, Tailwind CSS. CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 flex items-center justify-center min-h-screen">
+
+    <div class="w-full max-w-sm p-8 text-center bg-white rounded-xl shadow-md border border-stone-200">
+        <div class="text-6xl text-green-600 mb-4">✔</div>
+        <h1 class="text-3xl font-bold text-stone-900">Account Disconnected</h1>
+        <p class="mt-4 text-lg text-stone-600">Your QuickBooks Online account has been successfully disconnected from the Power BI Connector.</p>
+        <div class="mt-8 space-y-4">
+            <a href="./launch" class="block w-full px-8 py-3 bg-orange-700 text-white font-semibold rounded-full shadow-lg hover:bg-orange-800 transition-colors duration-300">Reconnect Account</a>
+            <a href="./" class="block w-full px-8 py-3 bg-stone-200 text-stone-700 font-semibold rounded-full hover:bg-stone-300 transition-colors duration-300">Return to Main Site</a>
+        </div>
+    </div>
+</body>
+</html>
