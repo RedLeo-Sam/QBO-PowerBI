@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - QBO to Power BI Connector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutrals -->
+    <!-- Application Structure Plan: A single-page layout with a fixed sidebar for jump-link navigation and a main content area for the policy text. This structure is chosen for optimal readability and easy navigation of a long-form legal document, allowing users to quickly find specific sections. -->
+    <!-- Visualization & Content Choices: Report Info: Privacy Policy Text -> Goal: Inform/Organize -> Presentation: Structured HTML with Tailwind CSS for typography -> Interaction: Smooth-scrolling jump links and active section highlighting via JavaScript -> Justification: Enhances scannability and user experience for a text-heavy document. -> Library/Method: Vanilla JS, Tailwind CSS. CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .active-nav {
+            color: #c2410c; /* text-orange-700 */
+            font-weight: 600;
+            background-color: #fff7ed; /* orange-50 */
+            border-left-color: #c2410c; /* border-orange-700 */
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-stone-900">Privacy Policy</h1>
+            <p class="mt-2 text-lg text-stone-600">For the QBO to Power BI Connector</p>
+            <p class="mt-4 text-sm text-stone-500">Last updated: August 20, 2025</p>
+        </header>
+
+        <div class="flex flex-col lg:flex-row gap-12">
+            <!-- Navigation Sidebar -->
+            <aside class="lg:w-1/4 lg:sticky lg:top-12 self-start">
+                <nav>
+                    <h2 class="font-semibold text-stone-700 mb-4">Sections</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#info-collect" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">Information We Collect</a></li>
+                        <li><a href="#info-use" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">How We Use Your Information</a></li>
+                        <li><a href="#data-security" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">Data Security</a></li>
+                        <li><a href="#third-party" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">Third-Party Services</a></li>
+                        <li><a href="#policy-changes" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">Changes to This Policy</a></li>
+                        <li><a href="#contact" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">Contact Information</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="lg:w-3/4">
+                <div class="prose max-w-none text-stone-700 leading-relaxed space-y-8">
+                    <p class="text-lg">This Privacy Policy describes how your information is handled by the QBO to Power BI Connector ("Application"). We respect your privacy and are committed to protecting your data.</p>
+                    
+                    <section id="info-collect" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">1. Information We Collect</h2>
+                        <p>Our Application is designed to be a secure bridge between your QuickBooks Online (QBO) account and Power BI. We do not collect, store, or sell any of your personally identifiable information or financial data.</p>
+                        <p>The Application requires you to sign in to your QBO account to grant us temporary, limited access to your data. This access is solely for the purpose of retrieving the information necessary to generate a Power BI dashboard.</p>
+                    </section>
+                    
+                    <section id="info-use" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">2. How We Use Your Information</h2>
+                        <p>The Application uses your QuickBooks Online data for one purpose only: to retrieve and present it to you within a Power BI dashboard. We do not store your data on our servers. The data passes through our application's temporary memory and is never saved to a database or disk.</p>
+                    </section>
+
+                    <section id="data-security" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">3. Data Security</h2>
+                        <p>We take reasonable measures to protect your data during its transit from QuickBooks Online to Power BI. All data transmission is encrypted using industry-standard protocols. Since we do not store your data, the risk of data breaches on our end is minimized.</p>
+                    </section>
+
+                    <section id="third-party" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">4. Third-Party Services</h2>
+                        <p>This Application relies on the following third-party services, each with its own privacy policy:</p>
+                        <ul class="list-disc pl-6 space-y-2 mt-4">
+                            <li><strong>Intuit QuickBooks Online:</strong> Your financial data is managed and secured by Intuit. You should review their privacy policy for details on how they handle your data.</li>
+                            <li><strong>Microsoft Power BI:</strong> The data visualization and dashboarding are provided by Microsoft. You should review their privacy policy for details on how they handle your data.</li>
+                        </ul>
+                    </section>
+
+                    <section id="policy-changes" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">5. Changes to This Policy</h2>
+                        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
+                    </section>
+
+                    <section id="contact" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">6. Contact Information</h2>
+                        <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:saad@binkhalid.net" class="text-orange-700 hover:underline">saad@binkhalid.net</a>.</p>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.policy-section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            link.classList.remove('active-nav');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active-nav');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            const dateElement = document.getElementById('lastUpdated');
+            if (dateElement) {
+                const today = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                dateElement.textContent = `Last updated: ${today.toLocaleDateString('en-US', options)}`;
+            }
+        });
+    </script>
+</body>
+</html>
