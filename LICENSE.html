@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End-User License Agreement - QBO to Power BI Connector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutrals -->
+    <!-- Application Structure Plan: A single-page layout with a fixed sidebar for jump-link navigation and a main content area for the EULA text. This structure is chosen for optimal readability and easy navigation of a long-form legal document, allowing users to quickly find specific sections without excessive scrolling. -->
+    <!-- Visualization & Content Choices: Report Info: EULA Text -> Goal: Inform/Organize -> Presentation: Structured HTML with Tailwind CSS for typography -> Interaction: Smooth-scrolling jump links and active section highlighting via JavaScript -> Justification: Enhances scannability and user experience for a text-heavy document. -> Library/Method: Vanilla JS, Tailwind CSS. CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .active-nav {
+            color: #c2410c; /* text-orange-700 */
+            font-weight: 600;
+            background-color: #fff7ed; /* orange-50 */
+            border-left-color: #c2410c; /* border-orange-700 */
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-stone-900">End-User License Agreement</h1>
+            <p class="mt-2 text-lg text-stone-600">For the QBO to Power BI Connector</p>
+            <p id="lastUpdated" class="mt-4 text-sm text-stone-500">Last updated: August 27, 2025</p>
+        </header>
+
+        <div class="flex flex-col lg:flex-row gap-12">
+            <!-- Navigation Sidebar -->
+            <aside class="lg:w-1/4 lg:sticky lg:top-12 self-start">
+                <nav>
+                    <h2 class="font-semibold text-stone-700 mb-4">Sections</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#license-grant" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">1. License Grant</a></li>
+                        <li><a href="#use-of-app" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">2. Use of the Application</a></li>
+                        <li><a href="#data-services" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">3. Data & Third-Party Services</a></li>
+                        <li><a href="#restrictions" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">4. Restrictions</a></li>
+                        <li><a href="#disclaimer" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">5. Disclaimer of Warranties</a></li>
+                        <li><a href="#liability" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">6. Limitation of Liability</a></li>
+                        <li><a href="#termination" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">7. Termination</a></li>
+                        <li><a href="#governing-law" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">8. Governing Law</a></li>
+                        <li><a href="#entire-agreement" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">9. Entire Agreement</a></li>
+                        <li><a href="#contact" class="nav-link block p-3 rounded-lg border-l-4 border-transparent text-stone-600 hover:bg-stone-100 transition-colors duration-200">10. Contact Information</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="lg:w-3/4">
+                <div class="prose max-w-none text-stone-700 leading-relaxed space-y-8">
+                    <p class="text-lg">This End-User License Agreement ("EULA") is a legal agreement between you, the end-user, and the "QBO to Power BI Connector" ("Application"). By using this Application, you agree to be bound by the terms and conditions of this EULA. If you do not agree to the terms of this EULA, do not use the Application.</p>
+                    
+                    <section id="license-grant" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">1. License Grant</h2>
+                        <p>Subject to the terms of this Agreement, the Application grants you a limited, non-exclusive, non-transferable, revocable license to use the Application for the sole purpose of accessing your QuickBooks Online data for analysis and visualization in Power BI.</p>
+                    </section>
+                    
+                    <section id="use-of-app" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">2. Use of the Application</h2>
+                        <p>You are granted permission to use the Application to connect to your QuickBooks Online account and retrieve data. You agree to use the Application only for its intended purpose and in compliance with all applicable laws and regulations.</p>
+                    </section>
+
+                    <section id="data-services" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">3. Data and Third-Party Services</h2>
+                        <p>The Application connects to your QuickBooks Online account to access your financial data. This data is then used to generate a report or dashboard in Power BI. You acknowledge and agree that the security and privacy of your data are governed by the respective policies of Intuit (QuickBooks Online) and Microsoft (Power BI). The Application is a conduit and does not permanently store your financial data.</p>
+                    </section>
+
+                    <section id="restrictions" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">4. Restrictions</h2>
+                        <p>You shall not, and shall not permit any third party to:</p>
+                        <ul class="list-disc pl-6 space-y-2 mt-4">
+                            <li>Modify, copy, distribute, or create derivative works based on the Application.</li>
+                            <li>Reverse engineer, decompile, or disassemble the Application.</li>
+                            <li>Use the Application for any purpose other than as expressly permitted by this EULA.</li>
+                        </ul>
+                    </section>
+
+                    <section id="disclaimer" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">5. Disclaimer of Warranties</h2>
+                        <p>The Application is provided "as is" and without warranty of any kind. To the maximum extent permitted by applicable law, the Application disclaims all warranties, express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+                    </section>
+                    
+                    <section id="liability" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">6. Limitation of Liability</h2>
+                        <p>In no event shall the Application be liable for any direct, indirect, incidental, special, or consequential damages arising out of the use of or inability to use the Application, even if the Application has been advised of the possibility of such damages.</p>
+                    </section>
+
+                    <section id="termination" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">7. Termination</h2>
+                        <p>This EULA is effective until terminated by either party. Your rights under this EULA will terminate automatically without notice from the Application if you fail to comply with any of its terms. Upon termination, you must cease all use of the Application.</p>
+                    </section>
+
+                    <section id="governing-law" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">8. Governing Law</h2>
+                        <p>This EULA shall be governed by the laws of the jurisdiction where the Application is being used, without regard to its conflict of law principles.</p>
+                    </section>
+
+                    <section id="entire-agreement" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">9. Entire Agreement</h2>
+                        <p>This EULA constitutes the entire agreement between you and the Application regarding its use. Any modification to this EULA must be in writing and signed by both parties.</p>
+                    </section>
+
+                    <section id="contact" class="policy-section pt-4">
+                        <h2 class="text-2xl font-semibold text-stone-900 border-b pb-2 mb-4">10. Contact Information</h2>
+                        <p>If you have any questions about this EULA, please contact us at <a href="mailto:saad@binkhalid.net" class="text-orange-700 hover:underline">saad@binkhalid.net</a>.</p>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.policy-section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            link.classList.remove('active-nav');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active-nav');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            
+            const dateElement = document.getElementById('lastUpdated');
+            if (dateElement) {
+                const today = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                dateElement.textContent = `Last updated: ${today.toLocaleDateString('en-US', options)}`;
+            }
+        });
+    </script>
+</body>
+</html>
